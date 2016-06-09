@@ -53,11 +53,11 @@ to the end of your __userSetup.mel__ file which can normally be found somewhere 
 
 See the following
 
-[Building the plug-in](./BUILD.md)
+[Building the plug-in](./BUILDING.md)
 
 #How To Use
 
 See the following
 
-[Using the plug-in](./USE.md)
+[Using the plug-in](./USING.md)
 
