@@ -49,3 +49,15 @@ to the end of your __userSetup.mel__ file which can normally be found somewhere 
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\scripts\userSetup.mel
 
+#Building From Source
+
+See the following
+
+[Building the plug-in](./BUILD.md)
+
+#How To Use
+
+See the following
+
+[Using the plug-in](./USE.md)
+
