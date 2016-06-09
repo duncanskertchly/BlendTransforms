@@ -1,15 +1,23 @@
 # BlendTransforms
-BlendTransforms plug-in for Maya
 
 #Introduction
 
-At the moment there are only builds (and build scripts) for Windows.
+This is a Maya plug-in I've recently put together. Primarily I had facial rigging in mind when developing it.
 
-#Installation
+The idea is to allow you to build and animate joint based rigs in much the same way that you would a blend shape based setup, using attributes to blend poses together rather than controlling bones directly in some fashion. I like doing facial rigs like this as you benefit from the speed and re-usability of a joint based setup, but still maintain the nice layer of abstraction that you get from blend-shapes.
+
+At the moment there are only builds (and build scripts) for Windows. There's nothing fancy going on so I think it would be easy to make it work on Mac and Linux.
+
+#Binary Installation
+
+##Note
+Maya versions lower that 2014 don't come bundled with PyQt so you'll have to install that yourself. This is a bit of a pain as you need to obtain a PyQt4 build that works with the Maya Python interpreter (2.6 or maybe 2.7) which is quite hard to find ready built versions of. If you really need to use this on 2013 let me know and I'll try and help.
+
+##Installing
 
 At the moment there are builds for Maya 2013 and 2015 in the Install folder. From the relevant version directory copy 
 
-> \install\\\<Your Version\>\plug-ins\BlendTransforms.mll
+> \install\\\<Maya Version\>\plug-ins\BlendTransforms.mll
 
 to one of your Maya plug-ins folders. Usually something like this
 
@@ -19,7 +27,7 @@ to one of your Maya plug-ins folders. Usually something like this
 
 Then copy the scripts from
 
-> \install\\\<Your Version\>\scripts\
+> \install\\\<Maya Version\>\scripts\
 
 to one of your Maya scripts folders. Usually something like this
 
