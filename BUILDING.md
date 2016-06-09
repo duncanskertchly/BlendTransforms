@@ -8,7 +8,7 @@ I learned about using CMake for Maya stuff from Chad Vernon's YouTube videos. We
 
 ## Pre-requisites
 
-You'll need a recent version of CMake installed and also the correct version of Visual Studio to match the Maya version you're interested in building the plug-in for.
+You'll need a recent version of CMake installed and also the correct version of Visual Studio to match the Maya version you're interested in building the plug-in for. Oviously you'll need Maya installed too.
 
 ## Build
 
