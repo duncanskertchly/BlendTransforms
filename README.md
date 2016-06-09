@@ -41,5 +41,11 @@ Lastly, copy the icons and shelves in to your Maya prefs directory. This is norm
 
 If everything worked correctly when you re-boot Maya you should see a shelf named __BlendTransforms__. Hit the __SRC__ button and as long as you get no errors everything has worked.
 
+If you want everything to load when you boot Maya just add the line
 
+> BlendTransforms();
+
+to the end of your __userSetup.mel__ file which can normally be found somewhere like
+
+> C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\scripts\userSetup.mel
 
