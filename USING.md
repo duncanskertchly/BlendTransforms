@@ -26,4 +26,4 @@ Here are the basic steps you'll need to follow.
 11. Select your Set and in the channel box you should have a list of attributes you can blend together. In the attribute editor the sliders should appear under the __Extra Attributes__ rollout.
 12. Continue addings sets and poses until you have everything you need for your rig.
 
-Once you have a all the sets and poses you need you can connect some kind of control rig to the attributes that should now exist on the Sets. For simple rigs you could animate the attributes directly.
+Once you have a all the Sets and poses you need you can connect some kind of control rig to the attributes that should now exist on the Sets. For simple rigs you could animate the attributes directly.
