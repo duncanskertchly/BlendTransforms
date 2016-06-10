@@ -19,7 +19,7 @@ At the moment there are builds for Maya 2013 and 2015 in the __Install__ folder.
 
 > \install\\\<Maya Version\>\plug-ins\BlendTransforms.mll
 
-to one of your Maya plug-ins folders. Usually something like this
+to one of your Maya plug-ins folders. Usually something like either of these
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\plug-ins
 
@@ -29,7 +29,7 @@ Then copy the scripts from
 
 > \install\\\<Maya Version\>\scripts\
 
-to one of your Maya scripts folders. Usually something like this
+to one of your Maya scripts folders. Usually something like these
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\scripts
 
