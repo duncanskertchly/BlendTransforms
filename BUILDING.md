@@ -25,7 +25,7 @@ You'll need a recent version of CMake installed and also the correct version of 
 
         cmake --buid . --config Release --target Install
         
-4. Once it's done the plugins will be located in the __\install\\\<Maya Version\>__ directory.
+4. Once it's done everything will be located in the __\install\\\<Maya Version\>__ directory.
 
 
 
