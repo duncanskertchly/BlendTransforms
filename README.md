@@ -1,5 +1,7 @@
 # Blend Transforms - Maya Plug-in
 
+![](./images/Banner.png)
+
 #Introduction
 
 This is a Maya plug-in I've recently put together. Primarily I had facial rigging in mind when developing it.
