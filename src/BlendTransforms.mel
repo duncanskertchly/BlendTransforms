@@ -1,6 +1,6 @@
 global proc int BlendTransforms()
 {
-	string $allPaths = `getenv "MAYA_PLUG_IN_PATH"`;
+    string $allPaths = `getenv "MAYA_PLUG_IN_PATH"`;
     string $paths[] = stringToStringArray($allPaths, ";");
 
     int $i = 0;

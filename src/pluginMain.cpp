@@ -8,7 +8,7 @@
 MStatus initializePlugin(MObject obj)
 {
 	MStatus stat;
-	MFnPlugin plugin(obj, "duncanskertchly@tt-fusion.com", "0.1", "");
+	MFnPlugin plugin(obj, "duncanskertchly@yahoo.co.uk", "0.1", "");
 	
 	stat = plugin.registerNode("BlendTransforms", BlendTransforms::id, BlendTransforms::creator, BlendTransforms::initialize );
 	if (stat != MStatus::kSuccess){
