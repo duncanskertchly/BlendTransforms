@@ -6,8 +6,7 @@ Here are the basic steps you'll need to follow.
 
 1. First make sure the joints you want to use do not have any incoming connectiosn to their translate, rotate or scale attributes and that these attributes are unlocked. Also make sure their rotation order is set to __XYZ__. This is the only rotation order that will work currently.
 2. Select the joints that you want to create a setup for. With them selected create a __Set__ by going __Create >> Sets >> Set (Option Box)__. Give the Set a sensible name.
-3. In the outliner select the newly created Set.
-4. On the __BlendTransforms__ shelf hit the ![](./prefs/icons/BlendTransforms/connect.bmp) button. If all goes to plan you should see a message like this in your script editor.
+3. In the outliner select the newly created Set and on the __BlendTransforms__ shelf hit the ![](./prefs/icons/BlendTransforms/connect.bmp) button. If all goes to plan you should see a message like this in your script editor.
     
         Success!
         # Result: True # 
