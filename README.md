@@ -43,6 +43,14 @@ in to your Maya prefs directory. This is normally something like
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\prefs
 
+For this step you should preserve the folder structure. So ultimately you'll end up with this file
+
+> C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\prefs\shelves\shelf_BlendTransforms.mel
+
+and this folder of bitmaps
+
+> C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\prefs\icons\BlendTransforms
+
 If everything worked correctly when you re-boot Maya you should see a shelf named __BlendTransforms__. Hit the ![](./prefs/icons/BlendTransforms/source.bmp) button and as long as you get no errors everything has worked.
 
 If you want everything to load when you boot Maya just add the line
