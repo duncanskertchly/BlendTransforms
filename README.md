@@ -15,7 +15,7 @@ Maya versions lower that 2014 don't come bundled with PyQt so you'll have to ins
 
 ##Installing
 
-At the moment there are builds for Maya 2013 and 2015 in the Install folder. From the relevant version directory copy 
+At the moment there are builds for Maya 2013 and 2015 in the __Install__ folder. From the relevant version directory copy 
 
 > \install\\\<Maya Version\>\plug-ins\BlendTransforms.mll
 
