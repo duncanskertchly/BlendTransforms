@@ -29,7 +29,7 @@ Then copy the scripts from
 
 > \install\\\<Maya Version\>\scripts\
 
-to one of your Maya scripts folders. Usually something like these
+to one of your Maya scripts folders. Usually something like either of these
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\scripts
 
