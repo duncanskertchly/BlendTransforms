@@ -1,4 +1,4 @@
-# Blend Transforms Maya Plug-in
+# Blend Transforms - Maya Plug-in
 
 #Introduction
 
