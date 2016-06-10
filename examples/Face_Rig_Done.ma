@@ -1,6 +1,6 @@
 //Maya ASCII 2013 scene
 //Name: Face_Rig_Done.ma
-//Last modified: Fri, Jun 10, 2016 02:08:55 PM
+//Last modified: Fri, Jun 10, 2016 02:30:28 PM
 //Codeset: 1252
 requires "BlendTransforms" "0.1";
 currentUnit -l centimeter -a degree -t film;
@@ -11,15 +11,15 @@ fileInfo "cutIdentifier" "201209210409-845513";
 fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.664014613042974 7.7265044570624397 30.810713218250719 ;
-	setAttr ".r" -type "double3" -1.5383527608790464 22.599999999997753 0 ;
+	setAttr ".t" -type "double3" 16.032635950526522 8.7631578141657851 32.155558943881474 ;
+	setAttr ".r" -type "double3" -3.3383527608790544 23.79999999999778 -1.0863028971463561e-016 ;
 	setAttr ".rp" -type "double3" 1.7763568394002505e-015 -2.2204460492503131e-016 0 ;
 	setAttr ".rpt" -type "double3" -1.0286176838337276e-017 3.7679623167519729e-019 
 		-1.9132491967219257e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 30.872648053957484;
+	setAttr ".coi" 32.804093053074574;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -9381,8 +9381,8 @@ createNode parentConstraint -n "Upper_Teeth_parentConstraint1" -p "Upper_Teeth";
 	setAttr ".tg[0].tot" -type "double3" 0 -4.3245658274341752 -0.51162947847714935 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 10 ".lnk";
-	setAttr -s 10 ".slnk";
+	setAttr -s 9 ".lnk";
+	setAttr -s 9 ".slnk";
 createNode displayLayerManager -n "layerManager";
 	setAttr ".cdl" 7;
 	setAttr -s 13 ".dli[1:12]"  1 2 3 4 5 6 7 8 
@@ -12208,6 +12208,7 @@ createNode multiplyDivide -n "multiplyDivide187";
 createNode clamp -n "clamp17";
 	setAttr ".mx" -type "float3" 1 1 0 ;
 createNode displayLayer -n "Face_HighRes";
+	setAttr ".dt" 2;
 	setAttr ".c" 2;
 	setAttr ".do" 1;
 createNode displayLayer -n "Face_LowRes";
@@ -12270,8 +12271,8 @@ select -ne :time1;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 5;
-	setAttr -av ".unw" 5;
+	setAttr -k on ".o" 6;
+	setAttr -av ".unw" 6;
 	setAttr -k on ".etw";
 select -ne :renderPartition;
 	setAttr -k on ".cch";
