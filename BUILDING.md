@@ -10,6 +10,8 @@ I learned about using CMake for Maya plug-ins from Chad Vernon's YouTube videos.
 
 You'll need a recent version of CMake installed and also the correct version of Visual Studio to match the Maya version you're interested in building the plug-in for. Obviously you'll need Maya installed too.
 
+Also, I didn't realise until I tried to do a build for 2016 that the devkit doesn't come bundled with the Maya install anymore. You have to download it from Autodesk. 
+
 ## Build
 
 1. Open a command prompt with the __build__ directory as your current working directory. Make sure the __build__ directory is empty. You can run __clean.bat__ in the root directory to do this.
