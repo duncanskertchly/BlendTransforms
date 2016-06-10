@@ -1,0 +1,84 @@
+global proc shelf_BlendTransforms () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "BT_DoSetup()" 
+        -enableBackground 0
+        -align "center" 
+        -label "BT_DoSetup()" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "BlendTransforms/source.bmp" 
+        -image1 "BlendTransforms/source.bmp"
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "BlendTransforms()" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+    ;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "BT_DoSetup()" 
+        -enableBackground 0
+        -align "center" 
+        -label "BT_DoSetup()" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "BlendTransforms/connect.bmp" 
+        -image1 "BlendTransforms/connect.bmp"
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "BT_DoSetup()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "BT_UIForm()" 
+        -enableBackground 0
+        -align "center" 
+        -label "BT_UIForm()" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "BlendTransforms/ui.bmp"
+        -image1 "BlendTransforms/ui.bmp"
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "BT_UIForm()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+    ;
+
+} 

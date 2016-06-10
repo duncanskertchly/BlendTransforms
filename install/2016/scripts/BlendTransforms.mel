@@ -1,0 +1,28 @@
+global proc int BlendTransforms()
+{
+    string $allPaths = `getenv "MAYA_PLUG_IN_PATH"`;
+    string $paths[] = stringToStringArray($allPaths, ";");
+
+    int $i = 0;
+    for ($i; $i < size($paths); $i++)
+    {
+        string $pluginPath = ($paths[$i] + "/BlendTransforms.mll");
+        if (`filetest -r $pluginPath`)
+        {
+            loadPlugin($pluginPath);
+            python("from BlendTransforms import *");
+            return 1;
+        }
+    }
+
+    return 0;
+}
+
+global proc AEBlendTransformsTemplate(string $nodeName)
+{
+    editorTemplate -suppress "transforms";
+    editorTemplate -suppress "outputs";
+    editorTemplate -suppress "output";
+    editorTemplate -suppress "caching";
+    editorTemplate -suppress "nodeState";
+}
