@@ -14,7 +14,7 @@ To download the repository using git bash use this command.
 
     git clone https://github.com/duncanskertchly/blendtransforms.git
     
-If you're not interested in the code and just want to use the plug-in it might be easier to use the little green download button on the main project page to download the everything as a zip file.
+If you're not interested in the code and just want to use the plug-in it might be easier to use the little green download button on the main project page to download it all as a zip file.
 
 #Binary Installation
 
