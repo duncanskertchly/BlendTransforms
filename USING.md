@@ -10,7 +10,10 @@ Here are the basic steps you'll need to follow.
     
         Success!
         # Result: True # 
-5. You can now create poses for this set of bones. Open the editor by hitting the ![](./prefs/icons/BlendTransforms/ui.bmp) button.
+5. You can now create poses for this set of bones. Open the editor by hitting the ![](./prefs/icons/BlendTransforms/ui.bmp) button. The editor should appear which looks like this.
+
+    ![](./images/UI.PNG)
+
 6. With your Set still selected hit the __Load Selected Set__ button. The set name should appear in the field to the left.
 7. Hit __Disconnect__. You are now ready to create poses. You will need to __Disconnect__ every time you want to add, edit or delete poses. Warnings like this
 
