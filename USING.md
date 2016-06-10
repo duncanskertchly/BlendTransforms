@@ -2,6 +2,8 @@
 
 Before you start make sure everything is loaded properly. To do this manually, select the __BlendTransforms__ shelf and hit the ![](./prefs/icons/BlendTransforms/source.bmp) button. This will load the plugins and source all the relevant scripts. As I've mentioned in the [readme](./README.md) document if you plan to use these tools regularly it would be a good idea to add a line to your __userSetup.mel__ file so they load automatically when you start Maya.
 
+When building setups using the plug-in it's best to have your linear units set to centimeters. Once you've finished using the editor you can switch back to your preffered units. The scripts will switch your units at the correct moments and display a warning so that you are aware that the switch has occurred.
+
 Here are the basic steps you'll need to follow.
 
 1. First make sure the joints you want to use do not have any incoming connectiosn to their translate, rotate or scale attributes and that these attributes are unlocked. Also make sure their rotation order is set to __XYZ__. This is the only rotation order that will work currently.
