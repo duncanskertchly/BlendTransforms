@@ -43,7 +43,7 @@ in to your Maya prefs directory. This is normally something like
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\prefs
 
-If everything worked correctly when you re-boot Maya you should see a shelf named __BlendTransforms__. Hit the __SRC__ button and as long as you get no errors everything has worked.
+If everything worked correctly when you re-boot Maya you should see a shelf named __BlendTransforms__. Hit the ![](./prefs/icons/BlendTransforms/source.bmp) button and as long as you get no errors everything has worked.
 
 If you want everything to load when you boot Maya just add the line
 
