@@ -8,7 +8,7 @@ This is a Maya plug-in I've recently put together. Primarily I had facial riggin
 
 The idea is to allow users animate joint based rigs in much the same way that they do on blend shape based setups, using attributes to blend poses together rather than controlling joints directly in some fashion. I like doing facial rigs like this as you benefit from the speed and re-usability of a joint based setup but still maintain the nice layer of abstraction that you get from blend-shapes.
 
-At the moment there are only builds (and build scripts) for Windows. There's nothing fancy going on so I think it would be easy to make it work on Mac and Linux.
+The main plug-in is written in C++ and the editor is Python. At the moment there are only builds (and build scripts) for Windows. There's nothing fancy going on so I think it would be easy to make it work on Mac and Linux.
 
 #Clone
 
