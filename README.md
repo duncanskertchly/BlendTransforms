@@ -8,6 +8,14 @@ The idea is to allow users animate joint based rigs in much the same way that th
 
 At the moment there are only builds (and build scripts) for Windows. There's nothing fancy going on so I think it would be easy to make it work on Mac and Linux.
 
+#Clone
+
+To download the repository using git bash use this command.
+
+    git clone https://github.com/duncanskertchly/blendtransforms.git
+    
+If you're not interested in the code and just want to use the plug-in it might be easier to use the little green download button on the main project page to download the everything as a zip file.
+
 #Binary Installation
 
 ##Note
