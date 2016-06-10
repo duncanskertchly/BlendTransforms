@@ -2,7 +2,7 @@
 
 ## Note
 
-I learned about using CMake for Maya stuff from Chad Vernon's YouTube videos. Well worth a watch if you're interested.
+I learned about using CMake for Maya plug-ins from Chad Vernon's YouTube videos. Well worth a watch if you're interested.
 
 [Chad Vernon - CMake](https://www.youtube.com/watch?v=2mUOt_F2ywo&list=PL_RMNSHxKvdUFTdl12WumiqnNWLn4LDQj)
 
