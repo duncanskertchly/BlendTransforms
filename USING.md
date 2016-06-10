@@ -1,6 +1,6 @@
 # Using the Plug-in
 
-Before you start make sure everything is loaded properly. To do this manually, select the __BlendTransforms__ shelf and hit the button labeled __SRC__. This will load the plugins and source all the relevant scripts. As I've mentioned in the [readme](./READEME.md) document if you plan to use these tools regularly it would be a good idea to add a line to your __userSetup.mel__ file so they load automatically when you start Maya.
+Before you start make sure everything is loaded properly. To do this manually, select the __BlendTransforms__ shelf and hit the button labeled __SRC__. This will load the plugins and source all the relevant scripts. As I've mentioned in the [readme](./README.md) document if you plan to use these tools regularly it would be a good idea to add a line to your __userSetup.mel__ file so they load automatically when you start Maya.
 
 Here are the basic steps you'll need to follow.
 
