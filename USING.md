@@ -24,6 +24,6 @@ Here are the basic steps you'll need to follow.
 8. Now set the joints back to their initial position by hitting __Set To Base__. From here you can create another pose and add it in the same way as step 7. If you want to edit a pose you've already created, select it in the __Pose List__ and hit __Set To Selected__. The bones will adopt the selected pose. Do your edits and when you're ready hit __Update Selected Pose__. Deleting poses works the same way, select the pose in the list and hit __Delete Pose__.
 9. When you have added all the poses you need hit __Connect__.
 10. Select your Set and in the channel box you should have a list of attributes you can blend together. In the attribute editor the sliders should appear under the __Extra Attributes__ rollout.
-11. Continue addings sets and poses until you have everything you need for your rig.
+11. Continue addings Sets and poses until you have everything you need for your rig.
 
 Once you have a all the Sets and poses you need you can connect some kind of control rig to the attributes that should now exist on the Sets. For simple rigs you could animate the attributes directly.
