@@ -10,20 +10,20 @@ Here are the basic steps you'll need to follow.
     
         Success!
         # Result: True # 
-5. You can now create poses for this set of bones. Open the editor by hitting the ![](./prefs/icons/BlendTransforms/ui.bmp) button. The editor should appear which looks like this.
+4. You can now create poses for this set of bones. Open the editor by hitting the ![](./prefs/icons/BlendTransforms/ui.bmp) button. The editor should appear which looks like this.
 
     ![](./images/UI.PNG)
 
-6. With your Set still selected hit the __Load Selected Set__ button. The set name should appear in the field to the left.
-7. Hit __Disconnect__. You are now ready to create poses. You will need to __Disconnect__ every time you want to add, edit or delete poses. Warnings like this
+5. With your Set still selected hit the __Load Selected Set__ button. The set name should appear in the field to the left.
+6. Hit __Disconnect__. You are now ready to create poses. You will need to __Disconnect__ every time you want to add, edit or delete poses. Warnings like this
 
         # Warning: Disconnect setup first! # 
 
     will be printed  if you try and do an action the requires disconnection so keep an eye on the script editor.
-8. Translate, rotate and scale your joints to create a pose. When you're ready type a (unique) name for this pose in to the lower of the text fields and hit the __Add Pose__ button.
-9. Now set the joints back to their initial position by hitting __Set To Base__. From here you can create another pose and add it in the same way as step 8. If you want to edit a pose you've already created, select it in the __Pose List__ and hit __Set To Selected__. The bones will adopt the selected pose. Do your edits and when you're ready hit __Update Selected Pose__. Deleting poses works the same way, select the pose in the list and hit __Delete Pose__.
-10. When you have added all the poses you need hit __Connect__.
-11. Select your Set and in the channel box you should have a list of attributes you can blend together. In the attribute editor the sliders should appear under the __Extra Attributes__ rollout.
-12. Continue addings sets and poses until you have everything you need for your rig.
+7. Translate, rotate and scale your joints to create a pose. When you're ready type a (unique) name for this pose in to the lower of the text fields and hit the __Add Pose__ button.
+8. Now set the joints back to their initial position by hitting __Set To Base__. From here you can create another pose and add it in the same way as step 7. If you want to edit a pose you've already created, select it in the __Pose List__ and hit __Set To Selected__. The bones will adopt the selected pose. Do your edits and when you're ready hit __Update Selected Pose__. Deleting poses works the same way, select the pose in the list and hit __Delete Pose__.
+9. When you have added all the poses you need hit __Connect__.
+10. Select your Set and in the channel box you should have a list of attributes you can blend together. In the attribute editor the sliders should appear under the __Extra Attributes__ rollout.
+11. Continue addings sets and poses until you have everything you need for your rig.
 
 Once you have a all the Sets and poses you need you can connect some kind of control rig to the attributes that should now exist on the Sets. For simple rigs you could animate the attributes directly.
