@@ -16,7 +16,7 @@ Here are the basic steps you'll need to follow.
 
     ![](./images/UI.PNG)
 
-5. With your Set still selected hit the __Load Selected Set__ button. The set name should appear in the field to the left.
+5. With your Set still selected hit the __Load Selected Set__ button. The Set name should appear in the field to the left.
 6. Hit __Disconnect__. You are now ready to create poses. You will need to __Disconnect__ every time you want to add, edit or delete poses. Warnings like this
 
         # Warning: Disconnect setup first! # 
