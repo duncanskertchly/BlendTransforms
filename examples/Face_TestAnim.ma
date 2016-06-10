@@ -1,6 +1,6 @@
 //Maya ASCII 2013 scene
-//Name: Anim_Test.ma
-//Last modified: Thu, Jun 09, 2016 11:50:41 AM
+//Name: Face_TestAnim.ma
+//Last modified: Fri, Jun 10, 2016 02:08:44 PM
 //Codeset: 1252
 file -rdi 1 -ns "Face_Rig_Done" -rfn "Face_Rig_DoneRN" "Face_Rig_Done.ma";
 file -r -ns "Face_Rig_Done" -dr 1 -rfn "Face_Rig_DoneRN" "Face_Rig_Done.ma";
@@ -12,12 +12,12 @@ fileInfo "cutIdentifier" "201209210409-845513";
 fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.265865742339667 7.9914568214956425 25.701128472607333 ;
-	setAttr ".r" -type "double3" -2.7383527296063153 20.600000000005497 0 ;
+	setAttr ".t" -type "double3" 11.933333539825203 7.1389078004679902 25.546938695983822 ;
+	setAttr ".r" -type "double3" -2.1383527296062996 25.000000000005468 1.0966730642436816e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 28.164558201832772;
+	setAttr ".coi" 28.595090898622203;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -64,8 +64,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 37 ".lnk";
-	setAttr -s 37 ".slnk";
+	setAttr -s 10 ".lnk";
+	setAttr -s 10 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -128,7 +128,7 @@ createNode reference -n "Face_Rig_DoneRN";
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:LEarJnt" 
 		"translateZ" " -av"
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:LEarJnt" 
-		"rotate" " -type \"double3\" 7.20747e-005 0.0638819 0.0646439"
+		"rotate" " -type \"double3\" 0 -0.0065792 0.00955697"
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:LEarJnt" 
 		"rotateX" " -av"
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:LEarJnt" 
@@ -144,7 +144,7 @@ createNode reference -n "Face_Rig_DoneRN";
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:REarJnt" 
 		"translateZ" " -av"
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:REarJnt" 
-		"rotate" " -type \"double3\" -0.0228974 1.42912 -0.918012"
+		"rotate" " -type \"double3\" 0 -0.00376754 -0.00437219"
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:REarJnt" 
 		"rotateX" " -av"
 		2 "|Face_Rig_Done:RootJnt|Face_Rig_Done:HeadMainJnt|Face_Rig_Done:HeadJnt|Face_Rig_Done:REarJnt" 
@@ -160,7 +160,7 @@ createNode reference -n "Face_Rig_DoneRN";
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl" 
 		"translateZ" " -av"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl" 
-		"rotate" " -type \"double3\" 0.0184897 0.0427579 -0.104834"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl" 
 		"rotateX" " -av"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl" 
@@ -204,7 +204,7 @@ createNode reference -n "Face_Rig_DoneRN";
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:Eye_ControlGrp|Face_Rig_Done:JoystickGrp_RLowerEyeLidGrp|Face_Rig_Done:JoystickFrame_RLowerEyeLidGrp|Face_Rig_Done:Joystick_RLowerEyeLidCtrl" 
 		"translateY" " -av 0"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:LEarCtrl_ZeroGrp|Face_Rig_Done:LEarCtrl" 
-		"rotate" " -type \"double3\" 7.20747e-005 0.0638819 0.0646439"
+		"rotate" " -type \"double3\" 0 -0.0065792 0.00955697"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:LEarCtrl_ZeroGrp|Face_Rig_Done:LEarCtrl" 
 		"rotateX" " -av"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:LEarCtrl_ZeroGrp|Face_Rig_Done:LEarCtrl" 
@@ -212,7 +212,7 @@ createNode reference -n "Face_Rig_DoneRN";
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:LEarCtrl_ZeroGrp|Face_Rig_Done:LEarCtrl" 
 		"rotateZ" " -av"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:REarCtrl_ZeroGrp|Face_Rig_Done:REarCtrl" 
-		"rotate" " -type \"double3\" -0.0228974 1.42912 -0.918012"
+		"rotate" " -type \"double3\" 0 -0.00376754 -0.00437219"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:REarCtrl_ZeroGrp|Face_Rig_Done:REarCtrl" 
 		"rotateX" " -av"
 		2 "|Face_Rig_Done:RootCtrl_ZeroGrp|Face_Rig_Done:RootCtrl|Face_Rig_Done:NeckCtrl_ZeroGrp|Face_Rig_Done:NeckCtrl|Face_Rig_Done:HeadCtrl_ZeroGrp|Face_Rig_Done:HeadCtrl|Face_Rig_Done:REarCtrl_ZeroGrp|Face_Rig_Done:REarCtrl" 
@@ -1319,15 +1319,15 @@ select -ne :time1;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 305;
-	setAttr -av ".unw" 305;
+	setAttr -k on ".o" 340;
+	setAttr -av ".unw" 340;
 	setAttr -k on ".etw";
 select -ne :renderPartition;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 9 ".st";
+	setAttr -s 10 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :initialShadingGroup;
@@ -1387,7 +1387,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 9 ".s";
+	setAttr -s 10 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -1665,4 +1665,4 @@ connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "sharedReferenceNode.sr" "Face_Rig_DoneRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of Anim_Test.ma
+// End of Face_TestAnim.ma
