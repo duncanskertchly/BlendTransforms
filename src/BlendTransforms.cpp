@@ -303,12 +303,17 @@ MStatus BlendTransforms::compute(const MPlug& plug, MDataBlock& data)
 			double3 &baseS = hTransform.child(baseScale).asDouble3();
 			double3 &tempRotOffset = hTransform.child(baseRotOffset).asDouble3();
 
-			double rotOffset[3] = {MAngle(tempRotOffset[0], MAngle::kDegrees).asRadians(), MAngle(tempRotOffset[1], MAngle::kDegrees).asRadians(), MAngle(tempRotOffset[2], MAngle::kDegrees).asRadians()};
+			double rotOffset[3] = {	MAngle(tempRotOffset[0], MAngle::kDegrees).asRadians(), 
+									MAngle(tempRotOffset[1], MAngle::kDegrees).asRadians(), 
+									MAngle(tempRotOffset[2], MAngle::kDegrees).asRadians() };
+
 			double resultScale[3] = {baseS[0], baseS[1], baseS[2]};
 
 			#ifdef _DEBUG
 				cout << "Base Matrix[" << i << "] = " << resultMatrix << endl; 
-				cout << "Base Scale[" << i << "] = " << baseS[0]  << " " << baseS[1] << " " << baseS[2] << endl; 
+				cout << "Base Scale[" << i << "] = " 	<< baseS[0] << " " 
+														<< baseS[1] << " " 
+														<< baseS[2] << endl; 
 			#endif
 
 
@@ -326,7 +331,9 @@ MStatus BlendTransforms::compute(const MPlug& plug, MDataBlock& data)
 				#ifdef _DEBUG
 					cout << "Pose Weight[" << i << "][" << j << "] = " << weight << endl;
 					cout << "Pose Matrix[" << i << "][" << j << "] = " << matrix << endl;
-					cout << "Pose Scale[" << i << "][" << j << "] = " << scale[0] << " " << scale[1] << " " << scale[2] << endl;
+					cout << "Pose Scale[" << i << "][" << j << "] = " 	<< scale[0] << " " 
+																		<< scale[1] << " " 
+																		<< scale[2] << endl;
 				#endif
 
 				resultMatrix += (weight * matrix);
@@ -353,9 +360,17 @@ MStatus BlendTransforms::compute(const MPlug& plug, MDataBlock& data)
 
 
 			#ifdef _DEBUG
-				cout << "Result Translation[" << i << "] = ( " << translation.x << ", " << translation.y << ", " << translation.z << " )" << endl;
-				cout << "Result Rotation[" << i << "] = ( " << rotation[0] << ", " << rotation[1] << ", " << rotation[2] << " )" << endl;
-				cout << "Result Scale[" << i << "] = ( " << resultScale[0] << ", " << resultScale[1] << ", " << resultScale[2] << " )" << endl;
+				cout << "Result Translation[" << i << "] = ( " 	<< translation.x << ", " 
+																<< translation.y << ", " 
+																<< translation.z << " )" << endl;
+
+				cout << "Result Rotation[" << i << "] = ( " << rotation[0] << ", " 
+															<< rotation[1] << ", " 
+															<< rotation[2] << " )" << endl;
+
+				cout << "Result Scale[" << i << "] = ( " 	<< resultScale[0] << ", " 
+															<< resultScale[1] << ", " 
+															<< resultScale[2] << " )" << endl;
 			#endif
 
 			MArrayDataHandle hOutputArray = data.outputArrayValue(output);
