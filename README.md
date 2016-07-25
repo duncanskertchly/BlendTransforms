@@ -71,6 +71,10 @@ to the end of your __userSetup.mel__ file which can normally be found somewhere 
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\scripts\userSetup.mel
 
+#Demo Scene
+
+There is a pair of demo files located in the __examples__ directory. These may be useful in testing the install and may give some idea of how the tools can be used.
+
 #Building From Source
 
 See the following
