@@ -32,7 +32,11 @@ class BT_UIForm(BT_UIInheritanceType):
     def __init__( self, parent = BT_GetMayaWindow() ):
         super(BT_UIForm, self).__init__(parent)
 
-        uicPath = getenv('HOME') +'/maya/' +str(BT_MayaVersionNumber) +'-x64/scripts/BlendTransforms.ui'
+        uicPath = None
+        if BT_MayaVersionNumber < 2016:
+            uicPath = getenv('HOME') +'/maya/' +str(BT_MayaVersionNumber) +'-x64/scripts/BlendTransforms.ui'
+        else:
+            uicPath = getenv('HOME') +'/maya/' +str(BT_MayaVersionNumber) +'/scripts/BlendTransforms.ui'
 
         self.ui = None
         if BT_MayaVersionNumber < 2014:
@@ -121,6 +125,10 @@ class BT_UIForm(BT_UIInheritanceType):
     def loadSelectedSet(self):
         selection = BT_GetSelectedSet()
         if not selection:
+            return False
+
+        if not cmds.attributeQuery('Blend_Node', ex = True, n = selection):
+            cmds.warning('Blend_Node attribute not found! This set might not be connected to a BlendTransforms node yet.')
             return False
         
         self.ui.poseList.clear()

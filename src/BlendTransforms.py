@@ -126,6 +126,10 @@ class BT_UIForm(BT_UIInheritanceType):
         selection = BT_GetSelectedSet()
         if not selection:
             return False
+
+        if not cmds.attributeQuery('Blend_Node', ex = True, n = selection):
+            cmds.warning('Blend_Node attribute not found! This set might not be connected to a BlendTransforms node yet.')
+            return False
         
         self.ui.poseList.clear()
         self.ui.setEdit.setText(selection)
