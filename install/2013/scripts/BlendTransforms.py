@@ -1,6 +1,7 @@
 import maya.cmds as cmds
+import maya.mel as mel
 import maya.OpenMayaUI as apiUI
-from os import getenv
+import os
 
 BT_UIInheritanceType = None
 BT_MayaVersionNumber = int(cmds.about(v = True).split("-")[0].split(" ")[0])
@@ -28,15 +29,24 @@ def BT_SetUnits():
         return True
     return False
 
+def BT_FindUIFile():
+    scriptPaths = mel.eval('getenv "MAYA_SCRIPT_PATH"').split(";")
+    if not scriptPaths:
+        return None
+    for path in scriptPaths:
+        testPath = path +'/BlendTransforms.ui'
+        if os.path.exists(testPath):
+            return testPath
+    return None
+
 class BT_UIForm(BT_UIInheritanceType):
     def __init__( self, parent = BT_GetMayaWindow() ):
         super(BT_UIForm, self).__init__(parent)
 
-        uicPath = None
-        if BT_MayaVersionNumber < 2016:
-            uicPath = getenv('HOME') +'/maya/' +str(BT_MayaVersionNumber) +'-x64/scripts/BlendTransforms.ui'
-        else:
-            uicPath = getenv('HOME') +'/maya/' +str(BT_MayaVersionNumber) +'/scripts/BlendTransforms.ui'
+        uicPath = BT_FindUIFile()
+
+        if not uicPath:
+            return None
 
         self.ui = None
         if BT_MayaVersionNumber < 2014:
