@@ -76,7 +76,7 @@ global proc shelf_BlendTransforms () {
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "BT_UIForm()" 
+        -command "BT_ShowUI()" 
         -sourceType "python" 
         -commandRepeatable 1
     ;

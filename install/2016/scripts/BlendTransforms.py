@@ -3,6 +3,7 @@ import maya.mel as mel
 import maya.OpenMayaUI as apiUI
 import os
 
+BT_UIWidget = None
 BT_UIInheritanceType = None
 BT_MayaVersionNumber = int(cmds.about(v = True).split("-")[0].split(" ")[0])
 
@@ -14,6 +15,7 @@ else:
     from PySide import QtCore, QtGui, QtUiTools
     from shiboken import wrapInstance
     BT_UIInheritanceType = type( QtGui.QWidget() )
+
 
 def BT_GetMayaWindow():
     ptr = apiUI.MQtUtil.mainWindow()
@@ -191,6 +193,18 @@ class BT_UIForm(BT_UIInheritanceType):
 
         BT_DisconnectSetup(set = uiSet)
         return True 
+
+def BT_ShowUI():
+    global BT_UIWidget
+    BT_DeleteUI()
+    BT_UIWidget = BT_UIForm()
+
+def BT_DeleteUI():
+    global BT_UIWidget
+    if not BT_UIWidget:
+        return
+    BT_UIWidget.deleteLater()
+    BT_UIWidget = None
 
 def BT_SetPose(set = None, index = None):
     if not set:
