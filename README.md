@@ -2,7 +2,7 @@
 
 ![](./images/Banner.png)
 
-#Introduction
+# Introduction
 
 This is a Maya plug-in I've recently put together. Primarily I had facial rigging in mind when developing it.
 
@@ -10,7 +10,7 @@ The idea is to allow users animate joint based rigs in much the same way that th
 
 The main plug-in is written in C++ and the editor is Python (PyQt). At the moment there are only builds (and build scripts) for Windows. There's nothing fancy going on so I think it would be easy to make it work on Mac and Linux.
 
-#Clone
+# Clone
 
 To download the repository using git bash use this command.
 
@@ -18,12 +18,12 @@ To download the repository using git bash use this command.
     
 If you're not interested in the code and just want to use the plug-in it might be easier to use the little green download button on the main project page to download it all as a zip file.
 
-#Binary Installation
+# Binary Installation
 
-##Note
+## Note
 Maya versions lower that 2014 don't come bundled with PyQt so you'll have to install that yourself. This is a bit of a pain as you need to obtain a PyQt4 build that works with the Maya Python interpreter (2.6 or maybe 2.7) which is quite hard to find pre-built versions of. If you really need to use this on 2013 let me know and I'll try and help.
 
-##Installing
+## Installing
 
 At the moment there are builds for Maya 2013 / 15 / 16 in the __Install__ folder. From the relevant version directory copy 
 
@@ -71,11 +71,11 @@ to the end of your __userSetup.mel__ file which can normally be found somewhere 
 
 > C:\Users\\\<User\>\Documents\maya\\\<Maya Version\>\scripts\userSetup.mel
 
-#Demo Scene
+# Demo Scene
 
 There is a pair of demo files located in the __examples__ directory. These may be useful in testing the install and may give some idea of how the tools can be used.
 
-#Building From Source
+# Building From Source
 
 See the following
 
