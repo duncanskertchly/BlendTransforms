@@ -81,7 +81,7 @@ See the following
 
 [Building the plug-in](./BUILDING.md)
 
-#How To Use
+# How To Use
 
 See the following
 
